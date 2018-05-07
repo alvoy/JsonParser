@@ -16,7 +16,7 @@ interface PeliculaDao {
     fun insertMovie(pelicula: Pelicula)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertMovies(peliculas: Array<Pelicula>)
+    fun insertMovies(peliculas: List<Pelicula>)
 
     @Update
     fun updateMovie(peliculas: Array<Pelicula>)

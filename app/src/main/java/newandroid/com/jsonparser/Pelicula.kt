@@ -10,4 +10,4 @@ import com.google.gson.annotations.SerializedName
  */
 
 @Entity(tableName = "Pelicula")
-data class Pelicula(@PrimaryKey (autoGenerate = true) @SerializedName("id") val id: Int, @ColumnInfo(name = "nombre") @SerializedName("nombre") val nombre: String, @ColumnInfo(name = "director") @SerializedName("director") val director: String, @ColumnInfo(name = "clasificacion") @SerializedName("clasificacion") val clasificacion: String)
+data class Pelicula(@PrimaryKey (autoGenerate = true)  @SerializedName("id") val id: Int, @SerializedName("nombre") @ColumnInfo(name = "nombre")  val nombre: String, @SerializedName("director") @ColumnInfo(name = "director") val director: String, @SerializedName("clasificacion") @ColumnInfo(name = "clasificacion")  val clasificacion: String)
